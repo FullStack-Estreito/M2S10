@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { CardapioItem } from "src/app/shared/models/cardapio-item.model";
 
 @Component({
   selector: "nfd-cardapio",
@@ -16,4 +17,17 @@ export class CardapioComponent {
     `,
     tituloBotao: "Cardápio",
   };
+
+  itensCardapio: CardapioItem[] = [
+    {
+      titulo: "Comidas",
+      urlImagem: "assets/img/food-0.jpg",
+      path: "",
+    },
+    {
+      titulo: "Bebidas",
+      urlImagem: "assets/img/drink-0.jpg",
+      path: "",
+    },
+  ];
 }
