@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { CardapioComponent } from './pages/cardapio/cardapio.component';
+import { ComidaListagemComponent } from './pages/comida-listagem/comida-listagem.component';
+import { BebidaListagemComponent } from './pages/bebida-listagem/bebida-listagem.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CardapioComponent
+    CardapioComponent,
+    ComidaListagemComponent,
+    BebidaListagemComponent
   ],
   imports: [
     BrowserModule,
