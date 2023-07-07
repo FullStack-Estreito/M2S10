@@ -29,7 +29,11 @@
   <h2 class="pb-2 text-center">Cardápio</h2>
 
   <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5">
-    <div *ngFor="let item of itensCardapio" class="col">
+    <div
+      *ngFor="let item of itensCardapio"
+      class="col"
+      (click)="navegarParaPagina(item)"
+    >
       <div
         class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
         [ngStyle]="{ 'background-image': 'url(' + item.urlImagem + ')' }"

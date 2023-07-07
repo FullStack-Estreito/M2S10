@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 import { CardapioItem } from "src/app/shared/models/cardapio-item.model";
 
 @Component({
@@ -22,12 +23,20 @@ export class CardapioComponent {
     {
       titulo: "Comidas",
       urlImagem: "assets/img/food-0.jpg",
-      path: "",
+      path: "/comidas",
     },
     {
       titulo: "Bebidas",
       urlImagem: "assets/img/drink-0.jpg",
-      path: "",
+      path: "/bebidas",
     },
   ];
+
+  constructor(private router: Router) {}
+
+  navegarParaPagina(itemCardapio: CardapioItem) {
+    console.log(itemCardapio);
+    // regra de negócio ou verificar algo antes de redirecionar
+    this.router.navigate([itemCardapio.path]);
+  }
 }
