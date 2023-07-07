@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'nfd-root',
-  templateUrl: './app.component.html',
+  selector: "nfd-root",
+  templateUrl: "./app.component.html",
 })
 export class AppComponent {}
